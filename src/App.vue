@@ -3,11 +3,11 @@
 
 
      <div>
-       <b-navbar toggleable="lg" :type="[DarkMode ? 'light' : 'dark']" :variant="[DarkMode ? 'dark' : 'light']" class="w-100 position-fixed w-100" style="top:0;z-index:9999;backgroud:#000;">
+       <b-navbar toggleable="lg" :variant="[DarkMode ? 'dark' : 'light']" class="w-100 position-fixed w-100" style="top:0;z-index:9999;backgroud:#000;">
     <b-navbar-brand class="font-weight-bold" :style="{color:[ TextColor ? '#fff' : '#000']}">Dhamma Media</b-navbar-brand>
 
-    <div class="ml-auto">
-      <button :style="{background:[ DarkMode ? '#fff' : '#000' ],color:[ TextColor ? '#000' : '#fff']}" class="btn small"  style="border-radius:100px;" @click="DarkMode =! DarkMode,TextColor =! TextColor"><i class="small">{{ DarkMode ? 'Light' : 'Dark' }}</i></button>
+    <div class="ml-auto pr-2">
+      <button :style="{background:[ DarkMode ? '#fff' : '#000' ],color:[ TextColor ? '#000' : '#fff']}" class="btn pt-1 pb-1  small"  style="border-radius:100px;" @click="DarkMode =! DarkMode,TextColor =! TextColor"><i class="small">{{ DarkMode ? 'Light' : 'Dark' }}</i></button>
     </div>
 
     <b-navbar-toggle target="nav-collapse" style="outline:none;" >
@@ -64,7 +64,7 @@
          </b-carousel-slide>
 
     </b-carousel>
-    
+
 
     <!-- <div class=" mt-1 p-0 w-100 text-center" style="background:transparent;">
       <GoogleAds/>

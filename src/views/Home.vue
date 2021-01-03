@@ -18,7 +18,7 @@
 
         <router-link v-for="(item,index) in store" :key="index" :to="'/view?id='+(index + 1)" class=" col-6 col-md-4 col-lg-2 p-1">
          <div class="card shadow">
-            <img class="card-img-top" style="min-height:27vh;" :src="item.img" alt="Card image cap">
+            <img class="card-img-top" :src="item.img" alt="Card image cap">
             <div class="card-body" style="min-height:100px;">
               <p class="card-text ">{{item.name}}</p>
             </div>
@@ -66,11 +66,17 @@ export default {
   .heroimg{
     height: 30vh;
   }
+  .card-img-top{
+    max-height: 26vh;
+  }
 }
 
 @media only screen and (min-width: 500px) {
   .heroimg{
     max-height: 80vh;
+  }
+  .card-img-top{
+    min-height: 29vh;
   }
 }
 </style>
