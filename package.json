@@ -1,0 +1,29 @@
+{
+  "name": "dama-web-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.1",
+    "vue": "^2.6.12",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-typescript": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
