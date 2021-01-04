@@ -17,12 +17,20 @@
          <h5 class="font-weight-bold">{{ main.name }} {{main.title}}</h5>
       </div>
 
-      <div class="col-12 text-center pt-2">
-        <h5>တရားခေါင်းစဥ် များ </h5>
+
+      <div class="col-12 text-center pt-2" >
+        <h5>( တရားခေါင်းစဥ်များ <span class="badge badge-success">{{ section.length }}</span>  )</h5>
       </div>
 
-      <router-link :to="'path?id='+id+'&title='+(index+1)" class="col-12 col-lg-5 offset-lg-1 card bg-warning text-dark mt-3 shadow pt-2 pb-2" style="text-decoration:none;height:70px;letter-spacing:1px;" v-for="(item,index) in section" :key="index">
-         <b>{{item.title}}</b>
+
+      <router-link :to="'path?id='+id+'&title='+(index+1)" class="col-12 col-md-6 col-lg-5 offset-lg-1 card bg-light text-dark mt-3 shadow" style="text-decoration:none;min-height:100px;letter-spacing:1px;" v-for="(item,index) in section" :key="index">
+         <div class="row d-flex align-items-center justify-content-center" style="min-height:10vh;">
+            <div class="col-4 p-0" style="min-height:100px;">
+                 <img :src="main.img" class="w-100" alt="">
+            </div>
+            <div class="col-8"><b>{{item.title}}</b></div>
+         </div>
+
       </router-link>
 
     </div>
@@ -62,7 +70,9 @@ export default {
     const main = this.main;
     this.section = main.dhamma.map(res=>{
       return res;
-    })
+    });
+
+
 
   }
 };

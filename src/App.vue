@@ -3,7 +3,7 @@
 
 
      <div>
-       <b-navbar toggleable="lg" :variant="[DarkMode ? 'dark' : 'light']" class="w-100 position-fixed w-100" style="top:0;z-index:9999;backgroud:#000;">
+       <b-navbar toggleable="lg" :type="[DarkMode ? 'light' : 'dark']" :variant="[DarkMode ? 'dark' : 'light']" class="w-100 position-fixed w-100" style="top:0;z-index:9999;backgroud:#000;">
     <b-navbar-brand class="font-weight-bold" :style="{color:[ TextColor ? '#fff' : '#000']}">Dhamma Media</b-navbar-brand>
 
     <div class="ml-auto pr-2">

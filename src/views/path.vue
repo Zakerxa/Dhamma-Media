@@ -11,17 +11,25 @@
           <div class="col-1"></div>
     </div>
 
-     <div class="row justify-content-center pb-5 p-1">
+     <div class="row justify-content-center pb-5 p-2">
          <div class="col-12 pt-4 pb-3">
           <h5 class="font-weigh-bold mb-0">{{path.title}}</h5>
         </div>
 
-         <div class="col-12 col-md-5 offset-md-1 col-lg-3 card bg-warning text-dark mt-3 shadow pt-2 pb-2" style="border-radius:15px;" v-for="(item,index) in paths" :key="index">
-             <p>{{item.title}}</p>
-             <router-link :to="'mp3?id='+id+'&title='+titleid+'&mp3='+index++" class="text-center">
-               <img src="../assets/symbol.png" class="float-left" style="width:39px;" alt="">  <i class="fa fa-play pt-2 mt-1"> တရားနာမည်</i>  <img src="../assets/wheeloflifebuddhist.png" class="float-right" style="width:50px;" alt="">
-             </router-link>
-         </div>
+        <div class="col-12 text-center pt-2" >
+           <h5>( စုစုပေါင်း အရေအတွက် <span class="badge badge-success">{{ paths.length }}</span>  )</h5>
+        </div>
+
+         <router-link :to="'mp3?id='+id+'&title='+titleid+'&mp3='+index++" class="col-12 col-md-5 offset-md-1 col-lg-3 card bg-warning text-dark mt-3 shadow pt-2 pb-2 " style="border-radius:15px;text-decoration:none;" v-for="(item,index) in paths" :key="index">
+            <div class="row d-flex align-items-center justify-content-center" style="min-height:10vh;">
+              <div  class="text-center col-2 col-md-3 d-flex align-items-center">
+                <img src="../assets/symbol.png" class="w-100  pt-2" alt="">
+              </div>
+              <div class="col-10 col-md-9">
+                <p class="m-0">{{item.title}}</p>
+              </div>
+            </div>
+         </router-link>
 
 
      </div>

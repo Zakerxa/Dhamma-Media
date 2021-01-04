@@ -14,13 +14,13 @@
       </div>
 
 
-      <div class="row justify-content-center p-1">
+      <div class="row justify-content-center p-2">
 
-        <router-link v-for="(item,index) in store" :key="index" :to="'/view?id='+(index + 1)" class=" col-6 col-md-4 col-lg-2 p-1">
-         <div class="card shadow">
+        <router-link v-for="(item,index) in store" :key="index" :to="'/view?id='+(index + 1)" class="col-6 col-md-4 col-lg-2 p-1" style="text-decoration:none;">
+         <div class="card shadow" style="min-height:40vh;">
             <img class="card-img-top" :src="item.img" alt="Card image cap">
-            <div class="card-body" style="min-height:100px;">
-              <p class="card-text ">{{item.name}}</p>
+            <div class="card-body p-2" style="min-height:80px;">
+              <p class="card-text text-dark">{{item.name}}</p>
             </div>
          </div>
         </router-link>
