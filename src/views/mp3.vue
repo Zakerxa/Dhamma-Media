@@ -1,19 +1,22 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
-         <div class="col-12 pt-4 p-2 pb-3">
-            <h5 class=" p-3 bg-warning" style="border-radius:15px;">{{ mp3.title }}</h5>
+         <div class="col-12 col-md-10 col-lg-7 pt-4 p-1 pb-3">
+            <h6 class=" p-3 bg-warning" style="border-radius:15px;">{{ mp3.title }}</h6>
          </div>
 
-         <div class="col-12 col-md-6 col-lg-4 text-center">
-             <img :src="img" class="w-75" alt="">
-         </div>
+        <div class="col-12 text-center col-md-7 col-lg-7">
+          <img :src="img" class="w-50" alt="">
 
-         <div class="col-12 col-lg-12 text-center pt-5 p-0">
-             <audio controls autoplay style="width:100%;">
-               <source :src="mp3.url" type="audio/mpeg">
+        </div>
+
+         <div class="col-12 col-md-8 col-lg-6 text-center pt-4 pb-4 p-0">
+
+              <audio controls autoplay style="width:100%;">
+               <source :src="mp3.url" :type="'audio/'+mp3.type">
                Your browser does not support the audio tag.
              </audio>
+
          </div>
 
 

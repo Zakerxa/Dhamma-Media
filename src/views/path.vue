@@ -63,7 +63,7 @@ export default {
     const api = require("../api/api.json");
     this.id = this.$route.query.id;
     this.titleid = this.$route.query.title;
-    console.log(this.$route.query.title);
+    // console.log(this.$route.query.title);
 
     const main = api.mp3.find(res=>{
        return res.id == this.id;
