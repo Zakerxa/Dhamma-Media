@@ -70,8 +70,9 @@
       <GoogleAds/>
     </div>
     <p class="disabled text-muted m-0 p-0 text-center">Advertisement</p> -->
-        <div class="pt-4"></div>
+     <div class="pt-4"></div>
      <router-view></router-view>
+
 
 
            <div class="row mt-3 text-light p-0 w-100 ml-0 justify-content-center" style="background:#222;">
