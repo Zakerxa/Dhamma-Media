@@ -37,6 +37,11 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/mp3.vue')
   },
   {
+    path: '/mp4',
+    name: 'mp4',
+    component: () => import('../views/mp4.vue')
+  },
+  {
     path: '/message',
     name: 'message',
     component: () => import('../views/message.vue')

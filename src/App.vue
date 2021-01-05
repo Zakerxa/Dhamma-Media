@@ -77,7 +77,7 @@
            <div class="row mt-3 text-light p-0 w-100 ml-0 justify-content-center" style="background:#222;">
                <div class="col-12 pt-4">
                   <div class="pb-3 pt-2 text-center">
-                       <h5 class="font-weight-bold ">Zakerxa Web</h5>
+                       <h5 class="font-weight-bold ">Dhamma Media</h5>
                     </div>
                </div>
 

@@ -16,7 +16,7 @@
 
           <h4 class="pt-3">ဆက်သွယ်ရန် </h4>
           <p class="p-1 font-weight-bold pl-3 mb-0">Phone No : <a class="" href="tel:+959789770588"> 09687717767</a> </p>
-          <p class="p-1 font-weight-bold pl-3 mb-0">Email Adr : <a class="" href="https://www.facebook.com/zekerxa"> zakerxa@gmail.com</a> </p>
+          <p class="p-1 font-weight-bold pl-3 mb-0">Email Adr : <a class=""> zakerxa@gmail.com</a> </p>
           <p class="p-1 font-weight-bold pl-3 mb-0">Facebook : <a class="" href="https://www.facebook.com/zekerxa"> facebook.com/zekerxa</a> </p>
 
 
