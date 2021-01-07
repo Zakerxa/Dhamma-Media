@@ -37,7 +37,7 @@
 
       <div
         @click="player(index)"
-        class="col-12 col-md-5 offset-md-1 col-lg-3 card bg text-light mt-3 shadow pt-2 pb-2"
+        class="col-12 col-md-5 offset-md-1 col-lg-3 card bg  mt-3 shadow pt-2 pb-2"
         style="border-radius: 15px; text-decoration: none"
         v-for="(item, index) in playlist"
         :key="index"
@@ -62,13 +62,13 @@
       style="z-index: 9999; bottom: -2px; left: 0"
     >
       <div
-        class="name col-12 w-100 pl-2 pt-2 position-relative"
+        class="name col-12 w-100 pl-2 mt-1 pt-2 position-relative"
         style="z-index: 0"
       >
         <marquee direction="left" truespeed="10"> {{ mp3.title }}</marquee>
       </div>
 
-      <div class="timeline mt-4 pt-1">
+      <div class="timeline mt-4 pt-2">
         <input
           id="seekslider"
           class="w-100 progress col-12 p-0 m-0"
@@ -181,6 +181,7 @@ export default {
       console.log(this.playlist);
     },
     playbtn() {
+      this.seekslider.value = 0;
       if (this.audio.paused) {
         this.audio.play();
         this.play = true;
@@ -298,8 +299,7 @@ export default {
 </script>
 
 <style lang="scss">
-.audio-player,
-.bg {
+.audio-player {
   background-image: linear-gradient(
     to right,
     #2b5876 0%,
@@ -307,8 +307,7 @@ export default {
     #2b5876 100%
   );
 }
-.audio-player,
-.bg {
+.audio-player {
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -317,15 +316,14 @@ export default {
   box-shadow: 0 0 20px #eee;
   display: block;
 }
-.audio-player,
-.bg:hover {
+.audio-player:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
 
 .audio-player {
-  height: 95px;
+  height: 99px;
   width: 100%;
 
   box-shadow: 0 0 20px 0 #000a;

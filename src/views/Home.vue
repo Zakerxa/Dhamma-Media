@@ -24,7 +24,29 @@
         <div class="col-1"></div>
       </div>
 
-      <div class="row justiy-content-center">
+
+      <div class="row justify-content-center p-2">
+
+        <div class="col-12 pt-3 pb-2 p-0">
+          <h4>MP3 တရားတော်များ</h4>
+        </div>
+        <router-link v-for="(item, index) in store" :key="index" :to="'/view?id=' + (index + 1)" class="col-6 col-md-4 col-lg-2 p-1" style="text-decoration: none"
+        >
+          <div class="card shadow" style="min-height: 40vh">
+            <img class="card-img-top" :src="item.img" alt="Card image cap" />
+            <div class="card-body p-2" style="min-height: 80px">
+              <p class="card-text text-dark">{{ item.name }}</p>
+            </div>
+          </div>
+        </router-link>
+      </div>
+
+
+      <div class="row justiy-content-center p-2">
+
+        <div class="col-12  pt-3 pb-2 p-0">
+          <h4>MP4 တရားတော်များ</h4>
+        </div>
 
             <router-link to="mp4?id=p&name=ပရိတ်ကြီး ၁၁ သုတ် ပဌာန်း တရားတော်များ" class="col-6 col-lg-3 offset-lg-2 p-1" style="text-decoration: none">
               <div class="card shadow" style="min-height: 30vh">
@@ -48,21 +70,6 @@
 
        </div>
 
-      <div class="row justify-content-center p-2">
-
-        <div class="col-12 pt-3 pb-2 p-0">
-          <h4>MP3 တရားတော်များ</h4>
-        </div>
-        <router-link v-for="(item, index) in store" :key="index" :to="'/view?id=' + (index + 1)" class="col-6 col-md-4 col-lg-2 p-1" style="text-decoration: none"
-        >
-          <div class="card shadow" style="min-height: 40vh">
-            <img class="card-img-top" :src="item.img" alt="Card image cap" />
-            <div class="card-body p-2" style="min-height: 80px">
-              <p class="card-text text-dark">{{ item.name }}</p>
-            </div>
-          </div>
-        </router-link>
-      </div>
     </div>
   </div>
 </template>

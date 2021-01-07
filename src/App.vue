@@ -6,9 +6,9 @@
        <b-navbar toggleable="lg" :type="[DarkMode ? 'light' : 'dark']" :variant="[DarkMode ? 'dark' : 'light']" class="w-100 position-fixed w-100" style="top:0;z-index:9999;backgroud:#000;">
     <b-navbar-brand class="font-weight-bold" :style="{color:[ TextColor ? '#fff' : '#000']}">Dhamma Media</b-navbar-brand>
 
-    <div class="ml-auto pr-2">
+    <!-- <div class="ml-auto pr-2">
       <button :style="{background:[ DarkMode ? '#fff' : '#000' ],color:[ TextColor ? '#000' : '#fff']}" class="btn pt-1 pb-1  small"  style="border-radius:100px;" @click="DarkMode =! DarkMode,TextColor =! TextColor"><i class="small">{{ DarkMode ? 'Light' : 'Dark' }}</i></button>
-    </div>
+    </div> -->
 
     <b-navbar-toggle target="nav-collapse" style="outline:none;" >
        <template #default="{ expanded }">
@@ -20,9 +20,10 @@
 
     <b-collapse id="nav-collapse" is-nav >
       <b-navbar-nav class="ml-auto">
-        <b-nav-item to="/"><p :style="{color:[ TextColor ? '#fff' : '#000']}" class="font-weight-bold mb-0">Home Page</p></b-nav-item>
-        <b-nav-item to="buddhist"><p :style="{color:[ TextColor ? '#fff' : '#000']}" class="font-weight-bold mb-0">History</p></b-nav-item>
-        <b-nav-item to="about"><p :style="{color:[ TextColor ? '#fff' : '#000']}" class="font-weight-bold mb-0">About</p></b-nav-item>
+
+        <b-nav-item to="/"><p :style="{color:[ TextColor ? '#fff' : '#000']}" class="font-weight-bold mb-0 pt-1 pb-1">Home Page</p></b-nav-item>
+        <b-nav-item to="buddhist"><p :style="{color:[ TextColor ? '#fff' : '#000']}" class="font-weight-bold mb-0 pt-1 pb-1">History</p></b-nav-item>
+        <b-nav-item to="about"><p :style="{color:[ TextColor ? '#fff' : '#000']}" class="font-weight-bold mb-0 pt-1 pb-1">About</p></b-nav-item>
 
       </b-navbar-nav>
     </b-collapse>
@@ -70,7 +71,9 @@
       <GoogleAds/>
     </div>
     <p class="disabled text-muted m-0 p-0 text-center">Advertisement</p> -->
-     <div class="pt-4"></div>
+     <div class="pt-3 col-12 text-center">
+       <button :style="{background:[ DarkMode ? '#fff' : '#000' ],color:[ TextColor ? '#000' : '#fff']}" class="btn pt-1 w-25 pb-1  small"  style="border-radius:100px;" @click="DarkMode =! DarkMode,TextColor =! TextColor"><span class="small font-weight-bold">{{ DarkMode ? 'Light' : 'Dark' }}</span></button>
+     </div>
      <router-view></router-view>
 
 
