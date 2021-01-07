@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="col-12 text-center p-3 pt-4 pb-4 text-center">
-                   <h5 class="text-muted p-2">Develoved By Zin Min Htet</h5>
+                   <h5 class="text-muted p-2">Developed By Zin Min Htet</h5>
                 </div>
 
      </div>
