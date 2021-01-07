@@ -50,7 +50,7 @@
             <img src="../assets/symbol.png" class="w-100 pt-2" alt="" />
           </div>
           <div class="col-10 col-md-9">
-            <p class="m-0 text-dark">{{ item.title }}</p>
+            <p class="m-0">{{ item.title }}</p>
           </div>
         </div>
       </div>
@@ -165,10 +165,8 @@ export default {
       this.mp3 = this.path.source[index];
       this.audio.load();
       this.yit = index;
-
     },
     playbtn() {
-      this.seekslider.value = 0;
       if (this.audio.paused) {
         this.audio.play();
         this.play = true;
@@ -241,9 +239,8 @@ export default {
     this.seekslider = document.getElementById("seekslider");
     this.seekslider.addEventListener("change", this.audioSeek, false);
     this.audio.addEventListener("timeupdate", this.audiotime, false);
-    //credit for song: Adrian kreativaweb@gmail.com
 
-    console.dir(this.audio);
+    // console.dir(this.audio);
 
     this.audio.addEventListener(
       "loadeddata",
