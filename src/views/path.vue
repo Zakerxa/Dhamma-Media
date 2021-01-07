@@ -50,7 +50,7 @@
             <img src="../assets/symbol.png" class="w-100 pt-2" alt="" />
           </div>
           <div class="col-10 col-md-9">
-            <p class="m-0">{{ item.title }}</p>
+            <p class="m-0 text-dark">{{ item.title }}</p>
           </div>
         </div>
       </div>
@@ -165,20 +165,7 @@ export default {
       this.mp3 = this.path.source[index];
       this.audio.load();
       this.yit = index;
-      fetch(this.path.source[index])
-        .then((response) => response.blob())
-        .then((blob) => {
-          this.audio.srcObject = blob;
-          return this.audio.play();
-        })
-        .then((_) => {
-          // Video playback started ;)
-        })
-        .catch((e) => {
-          // Video playback failed ;(
-        });
 
-      console.log(this.playlist);
     },
     playbtn() {
       this.seekslider.value = 0;
